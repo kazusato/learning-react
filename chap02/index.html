@@ -22,9 +22,11 @@
             <div id="container"></div>
             <script type="text/babel">
                 var destination = document.querySelector('#container');
-                ReactDOM.render(
-                    <h1>Batman</h1>,
-                    destination
+                ReactDOM.render(React.createElement(
+                    "h1",
+                    null,
+                    "Batman"
+                ), destination
                 );
             </script>
         </body>
