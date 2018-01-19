@@ -36,9 +36,20 @@
             }
         });
 
+        const showCircle = () => {
+            const colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363"];
+            const ran = Math.floor(Math.random() * colors.length);
+
+            return <Circle bgColor={colors[ran]}/>;
+        };
 
         ReactDOM.render(
-            <Circle bgColor="#F9C240"/>
+            <div>
+                {showCircle()}
+                {showCircle()}
+                {showCircle()}
+                {showCircle()}
+            </div>
             ,document.querySelector("#container")
         );
     </script>
