@@ -69,7 +69,7 @@
                             <li>Contact</li>
                         </ul>
                         <div className="content">
-                            <Home/>
+                            {this.props.children}
                         </div>
                     </div>
                 );
@@ -90,7 +90,7 @@
         ReactDOM.render(
             <Router>
                 <Route path="/" component={App}>
-
+                    <IndexRoute component={Home}/>
                 </Route>
             </Router>
             ,destination
