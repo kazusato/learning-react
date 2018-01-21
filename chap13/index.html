@@ -48,6 +48,14 @@
 <body>
     <div id="container"></div>
     <script type="text/babel">
+        var {
+            Router,
+            Route,
+            IndexRoute,
+            IndexLink,
+            Link
+        } = ReactRouter;
+
         const destination = document.querySelector("#container");
 
         const App = React.createClass({
@@ -80,11 +88,11 @@
         });
 
         ReactDOM.render(
-            <ReactRouter.Router>
-                <ReactRouter.Route path="/" component={App}>
+            <Router>
+                <Route path="/" component={App}>
 
-                </ReactRouter.Route>
-            </ReactRouter.Router>
+                </Route>
+            </Router>
             ,destination
         );
     </script>
